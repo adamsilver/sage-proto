@@ -1,0 +1,21 @@
+{% extends 'layouts/base.html' %}
+
+{% import "macros/headings.html" as headings %}
+
+{% block header %}
+<header role="banner"> 
+	Sage [Nav]
+	{% include "partials/nav.html" %}
+</header>
+{% endblock header %}
+
+{% block content %}
+
+<div class="mainContent">
+	<div class="pageContent">
+		{% block mainContent %}
+		{% endblock%}
+	</div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,73 @@
+{
+  "name": "nostyle",
+  "version": "1.1.1",
+  "description": "No style",
+  "main": "index.js",
+  "engines": {
+    "node": "8.9.3",
+    "npm": "5.5.1"
+  },
+  "scripts": {
+    "test": "JASMINE_CONFIG_PATH=src/test/app/jasmine.json jasmine",
+    "test-client": "karma start",
+    "start": "NODE_ENV=production node --use-strict dist/server.js",
+    "app": "node --use-strict src/app/app.js",
+    "watch": "run-p watch:*",
+    "watch:node": "nodemon src/app/app.js --ignore 'src/public/**/*'",
+    "build:dist": "npm run sass:prod && grunt dist && npm run dist-install",
+    "dist-install": "cd dist && npm install --production",
+    "dist": "npm run build:dist && npm run start",
+    "heroku-postbuild": "npm run build:dist",
+    "watch:sass": "npm run sass:dev && node-sass src/public/sass/main.scss src/public/css/main.css --source-map src/public/css/main.css.map --source-map-contents --include-path ./src/public/sass/ -w -r",
+    "sass:dev": "node-sass src/public/sass/main.scss src/public/css/main.css --source-map src/public/css/main.css.map --source-map-contents --include-path ./src/public/sass/",
+    "sass:prod": "node-sass src/public/sass/main.scss src/public/css/main.css --include-path ./src/public/sass/ -x --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-bert/example-node-app.git"
+  },
+  "keywords": [
+    "node",
+    "skeleton",
+    "app"
+  ],
+  "author": "Adam Silver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamsilver/nostyle/issues"
+  },
+  "homepage": "https://github.com/adamsilver/nostyle#readme",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "morgan": "*",
+    "multer": "*",
+    "nunjucks": "*",
+    "serve-static": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-filerev": "*",
+    "grunt-mkdir": "*",
+    "grunt-usemin": "*",
+    "jasmine": "*",
+    "jasmine-core": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*",
+    "load-grunt-tasks": "*",
+    "node-sass": "*",
+    "nodemon": "*",
+    "npm-run-all": "*"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  }
+}

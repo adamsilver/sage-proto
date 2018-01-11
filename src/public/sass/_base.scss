@@ -1,0 +1,238 @@
+/**********************************************************
+* Open Sans
+**********************************************************/
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/public/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+		url('/public/fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/public/fonts/OpenSans/OpenSans-Italic.woff2') format('woff2'),
+		url('/public/fonts/OpenSans/OpenSans-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/public/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+		url('/public/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('/public/fonts/OpenSans/OpenSans-BoldItalic.woff2') format('woff2'),
+		url('/public/fonts/OpenSans/OpenSans-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open sans', helvetica, arial, sans-serif;
+  text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  font-size: 100%;
+}
+
+a:link, a:visited {
+	color: #0074D9;
+}
+
+@mixin clearfix {
+  &:after {
+    visibility: hidden;
+	  display: block;
+	  font-size: 0;
+	  content: " ";
+	  clear: both;
+	  height: 0;
+  }
+}
+
+.visually-hidden {
+	border: 0!important;
+  clip: rect(0 0 0 0)!important;
+  height: 1px!important;
+  margin: -1px!important;
+  overflow: hidden!important;
+  padding: 0!important;
+  position: absolute!important;
+  width: 1px!important;
+}
+
+.header {
+	background-color: #222;
+	padding: 20px 20px;
+	overflow: hidden;
+}
+
+.logo {
+	font-size: 1.5em;
+	font-weight: bold;
+	float: left;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main {
+
+}
+
+h1 {
+	font-size: 2.2em;
+	line-height: 1;
+	color: #222;
+	margin-bottom: 40px;
+}
+
+@media(min-width: 30em) {
+	h1 {
+		font-size: 2.8em;
+		margin-bottom: 60px;
+	}
+}
+
+h2 {
+	font-size: 1.2em;
+	line-height: 1;
+	color: #222;
+	margin-bottom: 10px;
+}
+
+@media(min-width: 30em) {
+	h2 {
+		font-size: 1.6em;
+	}
+}
+
+
+p {
+	margin-bottom: 20px;
+}
+
+ul {
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
+
+.wifi-icon {
+	padding-left: 135px;
+	height: 128px;
+	background: transparent url( /public/img/wifi_icon.png ) 0 0 no-repeat;
+}
+
+.example {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.example iframe {
+	width: 100%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.html {
+  border: 1px solid #bfc1c3;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  padding-top: 35px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 1.5em;
+  overflow: auto;
+  position: relative;
+}
+
+.html:before {
+	content: "HTML";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.21053em 0.78947em 0.21053em 0.78947em;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 1.25;
+    background: #bfc1c3;
+    color: white;
+}
+
+.primaryNav {
+	border-top: 7px solid #0074D9; 
+	padding: 20px 20px 25px;
+	background-color: #f5f5f5;
+}
+
+.primaryNav ul {
+	list-style: none;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.primaryNav li {
+	display: inline-block;
+	font-size: 1em;
+	margin-right: 10px;
+}
+
+@media(min-width: 37.5em) {
+	.primaryNav li {
+		font-size: 1.2em;
+		margin-right: 15px;
+	}
+}
+
+.primaryNav a {
+	text-decoration: none;
+}
+
+.active {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pageContent {
+	padding: 50px 20px;
+}
+
+.pageContent p {
+	max-width: 40em;
+}
+
+.hidden {
+	display: none;
+}
+
+#adults,
+#children,
+#infants {
+	width: 50px;
+}
+
+input[id$="[amount]"] {
+	width: 100px;
+}
+
+.passwordRevealer input {
+	vertical-align: top;
+	max-width: 200px;
+}

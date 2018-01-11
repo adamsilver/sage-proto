@@ -1,0 +1,93 @@
+.menu {
+	padding: 0 0 20px;
+	position: relative;
+}
+
+.menu-button {
+	background-color: #ddd;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	color: #222;
+	font-size: 1.2em;
+	padding: 7px 16px;
+	border-left: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	border-bottom: 3px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-radius: 4px;
+}
+
+.menu-button:active {
+	border-left: 1px solid #aaa;
+	border-top: 3px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+
+.menu-button:hover {
+	background-color: #aaa;
+}
+
+.menu-button span {
+	font-size: 1.2em;
+	position: relative;
+	top: 0px;
+	left: 2px;
+}
+
+[role=menuitem] {
+	display: block;
+	text-align: left;
+	width: 100%;
+	background-color: #ddd;
+	appearance: none;
+	color: #222;
+	font-size: 1.2em;
+	padding: 7px 16px;
+	margin-bottom: 4px;
+	border-left: 1px solid #bbb;
+	border-top: 1px solid #bbb;
+	border-bottom: 3px solid #aaa;
+	border-right: 1px solid #bbb;
+	border-radius: 4px;
+}
+
+[role=menuitem]:hover {
+	background-color: #aaa;
+}
+
+@media(min-width: 45em) {
+	[role=menuitem] {
+		width: auto;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+[role=menu] {
+	padding-top: 5px;
+	width: 10em;
+	background-color: #fff;
+}
+
+.enhanced [role=menu] {
+	position: absolute;
+}
+
+
+@media(min-width: 45em) {
+	.enhanced [role=menu] {
+		border: none;
+		width: auto;
+		position: static;
+	}
+}
+
+[aria-expanded="true"] + .menu-items {
+	display: block;
+}
+
+[aria-expanded="false"] + .menu-items {
+	display: none;
+}

@@ -1,0 +1,43 @@
+@mixin button {
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	font-size: 1.2em;
+	padding: 7px 16px;
+	border-style: solid;
+	border-width: 1px 1px 3px 1px;
+	border-radius: 4px;
+	&:active {
+		border-width: 3px 1px 1px 1px;
+	}
+}
+
+/**************************************
+* Primary button
+**************************************/
+
+.primaryButton {
+	@include button;
+	background-color: #0074D9;
+	color: white;
+	border-color: #004077;
+}
+
+.primaryButton:hover {
+	background-color: #004077;
+}
+
+/**************************************
+* Secondary button
+**************************************/
+
+.secondaryButton {
+	@include button;
+	background-color: #ddd;
+	color: #222;
+	border-color: #bbb;
+}
+
+.secondaryButton:hover {
+	background-color: #bbb;
+}
