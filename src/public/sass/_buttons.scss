@@ -16,11 +16,13 @@
 * Primary button
 **************************************/
 
-.primaryButton {
+.primaryButton,
+.primaryButton:visited {
 	@include button;
 	background-color: #0074D9;
 	color: white;
 	border-color: #004077;
+	color: #fff;
 }
 
 .primaryButton:hover {

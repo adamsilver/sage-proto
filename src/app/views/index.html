@@ -3,10 +3,39 @@
 
 {% import "macros/headings.html" as headings %}
 
-{% block mainContent %}
+{% block content %}
 
-{{headings.h1('Sage Prototype')}}
+<div class="hero">
+	{{headings.h1('Sage')}}
+	<p>Lorem ipsum...</p>
+</div>
 
-<p>This is the Sage prototype kit.</p>
+<div class="productHero productHero--one">
+	{{headings.h2('Sage One')}}
+	<p>Accounting for freelancers and small businesses.</p>
+	<a class="productHero-button" href="">View Sage One</a>
+</div>
 
-{% endblock mainContent %}
+<div class="productHero productHero--live">
+	{{headings.h2('Sage Live')}}
+	<p>Powerful accounting for small and medium-sized companies.</p>
+	<a class="productHero-button" href="">View Sage Live</a>
+</div>
+
+<div class="productHero productHero--x3">
+	{{headings.h2('Sage X3')}}
+	<p>Financial and operation management that's faster, simpler and more flexible than ERP.</p>
+	<a class="productHero-button" href="">View Sage X3</a>
+</div>
+
+<div class="productHero productHero--x3">
+	{{headings.h2('Sage People')}}
+	<p>HR and people management for mid-size companies and enterprises.</p>
+	<a class="productHero-button" href="">View Sage X3</a>
+</div>
+
+<div class="placeholder">
+	Placeholder component
+</div>
+
+{% endblock content %}

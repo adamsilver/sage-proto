@@ -1,0 +1,37 @@
+{% extends 'layouts/default.html' %}
+{% set nav = "home" %}
+
+{% import "macros/headings.html" as headings %}
+
+{% block content %}
+
+<div class="productNav">
+	<h2>Flagship products</h2>
+	
+	<ul>
+		<li><a href="/sage-one">Sage One</a>
+			<span>Accounting for freelancers and small businesses.</span>
+		</li>
+		<li><a href="/sage-live">Sage Live</a>
+			<span>Powerful accounting for small and medium-sized companies.</span>
+		</li>
+		<li><a href="/sage-x3">Sage X3</a>
+			<span>Financial and operation management that's faster, simpler and more flexible than ERP.</span>
+		</li>
+		<li><a href="/sage-people">Sage People</a>
+			<span>HR and people management for mid-size companies and enterprises.</span>
+		</li>
+	</ul>
+
+	<h2>Other products</h2>
+
+	<ul>
+		<li><a href="/sage-one">Sage 50c</a></li>
+		<li><a href="/sage-live">Pegg</a></li>
+		<li><a href="/sage-live">Sage 200c</a></li>
+		<li><a href="/sage-live">Sage CRM</a></li>
+		<li><a href="/sage-live">Sage 50</a></li>
+		<li class="all"><a href="/sage-one">All products</a></li>
+	</ul>
+</div>
+{% endblock content %}
