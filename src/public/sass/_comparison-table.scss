@@ -74,6 +74,25 @@
   }
 }
 
+.comparisonTable a {
+	text-decoration: none;
+	font-size: 0.9em !important;
+	padding: 10px 20px !important;
+	
+	text-align: center;
+	@media(min-width: 500px) {
+		padding: 10px !important;
+		display: block;
+	}
+}
+
+.comparisonTable a span {
+	display: none;
+	@media(min-width: 500px) {
+		display: inline;
+	}
+}
+
 .actions {
 	@include clearfix;
 	max-width: 800px;
