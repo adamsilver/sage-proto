@@ -6,6 +6,7 @@
 	padding: 10px 30px;
 	border-radius: 20px;
 	display: inline-block;
+	text-decoration: none;
 }
 
 /**************************************
@@ -21,16 +22,4 @@
 
 .primaryButton:hover {
 	background-color: #bd144a;
-}
-
-/**************************************
-* Secondary button
-**************************************/
-
-.secondaryButton {
-	@include button;
-}
-
-.secondaryButton:hover {
-	
 }

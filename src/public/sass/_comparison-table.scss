@@ -1,6 +1,12 @@
 .comparisonTable {
-	padding: 60px 20px;
+	padding: 60px 0px;
 	background-color: #F5F9FF;
+}
+
+.comparisonTable > div {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .comparisonTable h2 {
@@ -18,7 +24,7 @@
 	margin-right: auto;
 	border: 1px solid #ddd;
 	width: 100%;
-	max-width: 800px;
+	max-width: 760px;
 	margin-bottom: 20px;
 }
 

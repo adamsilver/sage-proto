@@ -1,10 +1,12 @@
 .hero {
 	background-color: #f5f5f5;
-	padding: 50px 30px;
+	padding: 50px 0px;
 }
 
-.sub + .hero {
-	padding-top: 30px;
+.hero > div {
+	max-width: 920px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 .productHero {
@@ -14,18 +16,6 @@
 .productHero-button {
 	@include button;
 	font-size: 0.9em;
-}
-
-.productHero--one {
-
-}
-
-.productHero--live {
-	
-}
-
-.productHero--x3 {
-	
 }
 
 .placeholder {

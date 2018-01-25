@@ -3,8 +3,10 @@
 {% import "macros/headings.html" as headings %}
 
 {% block header %}
-<header role="banner"> 
-	<a href="/" class="logo">Sage</a> 
-	{% include "partials/nav.html" %}
+<header role="banner">
+	<div>
+		<a href="/" class="logo"><img src="/public/img/logo.svg" width="60"></a>
+		{% include "partials/nav.html" %}
+	</div>
 </header>
 {% endblock header %}
