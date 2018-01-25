@@ -58,18 +58,14 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	line-height: 1;
 	color: #222;
 	margin-bottom: 10px;
-}
-
-@media(min-width: 30em) {
-	h2 {
-		font-size: 1.6em;
+	@media(min-width: 30em) {
+		font-size: 2em;
 	}
 }
-
 
 p {
 	margin-bottom: 20px;
@@ -82,4 +78,30 @@ ul {
 
 .hidden {
 	display: none;
+}
+
+.sub {
+	background-color: #f5f5f5;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.sub a {
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	
+	padding: 4px 8px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table th,
+table td {
+	text-align: left;
+	vertical-align: top;
 }

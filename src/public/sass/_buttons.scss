@@ -2,14 +2,10 @@
 	border: none;
 	appearance: none;
 	-webkit-appearance: none;
-	font-size: 1.2em;
-	padding: 7px 16px;
-	border-style: solid;
-	border-width: 1px 1px 3px 1px;
-	border-radius: 4px;
-	&:active {
-		border-width: 3px 1px 1px 1px;
-	}
+	font-size: 1em;
+	padding: 10px 30px;
+	border-radius: 20px;
+	display: inline-block;
 }
 
 /**************************************
@@ -19,14 +15,12 @@
 .primaryButton,
 .primaryButton:visited {
 	@include button;
-	background-color: #0074D9;
+	background-color: #ED1C5F;
 	color: white;
-	border-color: #004077;
-	color: #fff;
 }
 
 .primaryButton:hover {
-	background-color: #004077;
+	background-color: #bd144a;
 }
 
 /**************************************
@@ -35,11 +29,8 @@
 
 .secondaryButton {
 	@include button;
-	background-color: #ddd;
-	color: #222;
-	border-color: #bbb;
 }
 
 .secondaryButton:hover {
-	background-color: #bbb;
+	
 }
