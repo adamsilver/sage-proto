@@ -7,7 +7,34 @@
 	max-width: 920px;
 	padding: 0 20px;
 	margin: 0 auto;
+	@include clearfix;
 }
+
+.hero-text {
+	@media(min-width: 760px) {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 10px;
+	}
+}
+
+.hero-video {
+	padding-top: 10px;
+	text-align: center;
+	@media(min-width: 760px) {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+}
+
+.hero-video img {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
 
 .productHero {
 	padding: 30px 30px 60px;
