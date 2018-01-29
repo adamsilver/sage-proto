@@ -1,0 +1,40 @@
+.hero {
+	padding: 50px 0px;
+}
+
+.hero > div {
+	max-width: 920px;
+	padding: 0 20px;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.hero-text {
+	@media(min-width: 760px) {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 10px;
+	}
+}
+
+.hero-text .primaryButton {
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.hero-video {
+	padding-top: 10px;
+	text-align: center;
+	@media(min-width: 760px) {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+}
+
+.hero-video img {
+	width: 100%;
+	margin-bottom: 5px;
+}

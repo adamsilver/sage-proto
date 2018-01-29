@@ -1,20 +1,9 @@
 {% extends 'layouts/base.html' %}
 
-{% import "macros/headings.html" as headings %}
-
 {% block header %}
-<header role="banner">
-	<div>
-		<a href="/" class="logo"><img src="/public/img/logo.svg" width="60"></a>
-		{% include "partials/nav.html" %}
-	</div>
-</header>
+	{% include "partials/header.html" %}
 {% endblock header %}
 
 {% block footer %}
-<footer>
-	<div>
-		Footer
-	</div>
-</footer>
+	{% include "partials/footer.html" %}
 {% endblock footer %}

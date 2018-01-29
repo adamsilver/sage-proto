@@ -1,7 +1,13 @@
 @import 'base';
 @import 'buttons';
 @import 'header';
+@import 'footer';
+@import 'product-nav';
 @import 'forms/elements';
 @import 'forms/error-summary';
-@import 'dump';
-@import 'comparison-table';
+@import 'accounting/hero';
+@import 'accounting/features';
+@import 'accounting/comparison-table';
+@import 'accounting/testimonial';
+@import 'accounting/payroll';
+@import 'accounting/contact-me';
