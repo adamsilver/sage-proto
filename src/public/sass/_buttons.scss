@@ -23,3 +23,20 @@
 .primaryButton:hover {
 	background-color: #bd144a;
 }
+
+/**************************************
+* Secondary button
+**************************************/
+
+.secondaryButton,
+.secondaryButton:visited {
+	@include button;
+	border: 2px solid  #ED1C5F;
+	background-color: #fff;
+	color: #ED1C5F;
+}
+
+.secondaryButton:hover {
+	// background-color: #ED1C5F;
+	// color: #fff;
+}

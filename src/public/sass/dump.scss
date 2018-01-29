@@ -219,3 +219,40 @@
 	margin-bottom: 30px;
 	width: 100%;
 }
+
+.payroll {
+	padding: 50px 0px;
+}
+
+.payroll > div {
+  max-width: 920px;
+	padding: 0 20px;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.payroll h2 {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.payroll p {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+}
+
+footer > div {
+	max-width: 920px;
+	padding: 20px 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
