@@ -1,0 +1,51 @@
+.mobile {
+	padding: 20px 0px;
+}
+
+.mobile > div {
+	max-width: 920px;
+	padding: 0 20px;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.mobile-text {
+	@media(min-width: 760px) {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 10px;
+	}
+}
+
+.mobile-image {
+	padding-top: 10px;
+	text-align: center;
+	@media(min-width: 760px) {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+}
+
+.mobile h2 {
+	max-width: 600px;
+	margin-bottom: 10px;
+	@media(min-width: 760px) {
+		margin-top: 40px;
+	}
+}
+
+.mobile p {
+	max-width: 600px;
+	margin-bottom: 30px;
+}
+
+.mobile-image img {
+	max-width: 300px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 100%;
+}
