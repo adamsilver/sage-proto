@@ -15,7 +15,8 @@
 
 .comparisonTable p {
 	text-align: center;
-	margin-bottom: 30px;
+	max-width: 600px;
+	margin: 0 auto 30px;
 }
 
 .comparisonTable table {
@@ -115,4 +116,8 @@
 	@media(min-width: 500px) {
 		padding-right: 10px;
 	}
+}
+
+.comparisonTable .comparisonTable-save {
+	text-align: left;
 }
