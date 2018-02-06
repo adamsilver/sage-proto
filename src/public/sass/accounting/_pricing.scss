@@ -39,6 +39,9 @@
 		margin-right: 20px;
 		margin-bottom: 0;
 	}
+	h3 {
+		margin-bottom: 12px;
+	}
 }
 
 .pricing-standard {
@@ -50,16 +53,20 @@
 		width: 50%;
 		margin-left: 20px;
 	}
+	h3 {
+		margin-bottom: 12px;
+	}
 }
 
 .pricing-price {
 	font-size: 1.4em;
 	color: #ED1C5F;
-	margin-bottom: 0;
+	margin-bottom: 3px;
 }
 
 .pricing-priceAfter {
-	text-decoration: line-through;
+	font-size: 0.8em;
+	color: #666;
 }
 
 .pricing-vat {
