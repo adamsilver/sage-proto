@@ -67,6 +67,16 @@ h2 {
 	}
 }
 
+h3 {
+	font-size: 1em;
+	line-height: 1;
+	color: #222;
+	margin-bottom: 10px;
+	@media(min-width: 30em) {
+		font-size: 1.2em;
+	}
+}
+
 p {
 	margin-bottom: 20px;
 }
