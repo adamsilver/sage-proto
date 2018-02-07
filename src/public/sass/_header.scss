@@ -52,4 +52,11 @@ header nav a {
 
 header .search {
 	margin-top: 3px;
+	vertical-align: bottom;
+	background: url(/public/img/magnifying-glass.svg) no-repeat;
+	padding-left: 22px;
+
+	a {
+		color: #000;
+	}
 }
