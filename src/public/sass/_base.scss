@@ -87,6 +87,10 @@ ul {
 	margin-left: 25px;
 }
 
+li {
+	line-height: 1.5em;
+}
+
 .hidden {
 	display: none;
 }
@@ -115,4 +119,27 @@ table th,
 table td {
 	text-align: left;
 	vertical-align: top;
+}
+
+.image {
+	position: relative;
+}
+
+.image p {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	background-color: #f5f5f5;
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: left;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.image {
+	img {
+		width: 100%;
+	}
 }

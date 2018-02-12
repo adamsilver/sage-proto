@@ -19,6 +19,11 @@
 	}
 }
 
+.hero-text p {
+	margin-bottom: 40px;
+	max-width: 320px;
+}
+
 .hero-text .primaryButton {
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -50,4 +55,10 @@
 .hero-video img {
 	width: 100%;
 	margin-bottom: 5px;
+}
+
+.company-logos img {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
