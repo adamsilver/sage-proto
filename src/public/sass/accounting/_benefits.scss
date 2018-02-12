@@ -7,6 +7,9 @@
 	max-width: 920px;
 	padding: 0 20px;
 	margin: 0 auto;
+}
+
+.benefits-section {
 	@include clearfix;
 }
 
@@ -24,6 +27,10 @@
 	.primaryButton {
 		margin-bottom: 10px;
 	}
+	
+}
+
+.benefits-text--first {
 	@media(min-width: 760px) {
 		float: left;
 		width: 50%;
@@ -32,3 +39,14 @@
 		padding-right: 10px;
 	}
 }
+
+.benefits-text--second {
+	@media(min-width: 760px) {
+		float: right;
+		width: 50%;
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
