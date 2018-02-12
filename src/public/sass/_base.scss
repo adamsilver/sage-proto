@@ -45,7 +45,7 @@ a {
 
 h1 {
 	font-size: 2.2em;
-	line-height: 1;
+	line-height: 1.4em;
 	color: #222;
 	margin-bottom: 10px;
 }
@@ -59,7 +59,7 @@ h1 {
 
 h2 {
 	font-size: 1.4em;
-	line-height: 1;
+	line-height: 1.4em;
 	color: #222;
 	margin-bottom: 10px;
 	@media(min-width: 30em) {
@@ -69,7 +69,7 @@ h2 {
 
 h3 {
 	font-size: 1em;
-	line-height: 1;
+	line-height: 1.4em;
 	color: #222;
 	margin-bottom: 10px;
 	@media(min-width: 30em) {
@@ -79,6 +79,7 @@ h3 {
 
 p {
 	margin-bottom: 20px;
+	line-height: 1.4em;
 }
 
 ul {

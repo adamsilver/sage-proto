@@ -1,5 +1,6 @@
 .comparisonTable {
 	padding: 60px 0px;
+	border-bottom: 1px solid #ccc;
 }
 
 .comparisonTable > div {
@@ -119,4 +120,12 @@
 
 .comparisonTable .comparisonTable-save {
 	text-align: left;
+}
+
+.comparisonTable-popular {
+	font-size: 0.75em;
+	background-color: yellow;
+	font-weight: normal;
+	display: inline-block;
+	padding: 1px 4px;
 }

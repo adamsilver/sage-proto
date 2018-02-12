@@ -1,7 +1,6 @@
 .features {
 	padding: 50px 0px;
-	background-color: #f5f5f5;
-	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
 }
 
 .features > div {
@@ -40,6 +39,10 @@
 	max-width: 600px;
 	margin: 0 auto;
 	margin-bottom: 10px;
+
+	@media(min-width: 760px) {
+		text-align: left;
+	}
 }
 
 .feature p {
@@ -47,14 +50,9 @@
 	max-width: 600px;
 	margin: 0 auto;
 	margin-bottom: 30px;
-}
-
-.feature img {
-	max-width: 500px;
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	width: 100%;
+	@media(min-width: 760px) {
+		text-align: left;
+	}
 }
 
 .feature-tag {
@@ -65,4 +63,47 @@
 	padding: 3px 6px;
 	display: inline-block;
 	background-color: #ffedf3;
+}
+
+.feature-text {
+	@media(min-width: 760px) {
+		float: left;
+		width: 35%;
+		box-sizing: border-box;
+		padding-right: 10px;
+	}
+}
+
+.feature-image {
+	padding-top: 10px;
+	text-align: center;
+	@media(min-width: 760px) {
+		float: left;
+		width: 65%;
+		box-sizing: border-box;
+		padding-left: 10px;
+	}
+}
+
+.feature-image img {
+	max-width: 500px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.mobile-apps {
+	text-align: center;
+	margin-bottom: 15px;
+	@media(min-width: 760px) {
+		text-align: left;
+	}
+}
+
+.feature-cta {
+	margin: 0 auto 15px;
+	text-align: center;
+	@media(min-width: 760px) {
+		text-align: left;
+	}
 }
