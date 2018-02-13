@@ -2,6 +2,18 @@
 	padding: 60px 0px;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
+
+	h2 {
+		text-align: center;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+.sbc-description {
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto 30px;
 }
 
 .sbc > div {
@@ -10,22 +22,28 @@
 	padding: 0 20px;
 }
 
-.sbc h2 {
-	text-align: center;
+.sbc-items {
+	@media(min-width: 600px) {
+		display: flex;
+		justify-content: center;
+	}
 }
 
-.sbc p {
-	text-align: center;
-	max-width: 600px;
-	margin: 0 auto 30px;
+.sbc-item {
+	border: 2px solid #ccc;
+	border-radius: 30px;
+	padding: 30px;
+	margin-bottom: 30px;
+	p {
+		text-align: left;
+	}
+
+	@media(min-width: 600px) {
+		margin-left: 10px;
+		margin-right: 10px;
+		min-width: 200px;
+		max-width: 200px;
+	}
 }
 
-.sbc ul {
-	text-align: center;
-	list-style: none;
-	margin: 0 0 30px;
-}
 
-.sbc-cta {
-	text-align: center;
-}
