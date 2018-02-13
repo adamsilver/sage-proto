@@ -74,6 +74,12 @@
 	}
 }
 
+.feature:nth-child(odd) .feature-text {
+	@media(min-width: 760px) {
+		float: right;
+	}
+}
+
 .feature-image {
 	padding-top: 10px;
 	text-align: center;
@@ -82,6 +88,13 @@
 		width: 65%;
 		box-sizing: border-box;
 		padding-left: 10px;
+	}
+}
+
+.feature:nth-child(odd) .feature-image {
+	@media(min-width: 760px) {
+		float: right;
+		padding-right: 10px;
 	}
 }
 
