@@ -8,7 +8,6 @@
 	max-width: 920px;
 	padding: 0 20px;
 	margin: 0 auto;
-	@include clearfix;
 }
 
 .testimonial h2 {
@@ -17,19 +16,19 @@
 	margin: 0 auto 40px;
 }
 
+.testimonial-items {
+	@media(min-width: 600px) {
+		display: flex;
+	}
+}
+
 .testimonial-item {
 	box-sizing: border-box;
-	padding-bottom: 50px;
-	float: left;
-	@media(min-width: 500px) {
-		width: 33%;
-		padding: 0 20px;
-	}
+	padding: 0 20px 50px;
 	p {
 		max-width: 600px;
 		margin-bottom: 30px;
 	}
-
 	blockquote {
 		font-style: italic;
 		font-size: 1.2em;

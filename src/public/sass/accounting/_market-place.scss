@@ -1,0 +1,54 @@
+.marketPlace {
+	padding: 50px 0px 60px;
+  border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+
+	h2 {
+		max-width: 600px;
+		text-align: center;
+		margin: 0 auto 40px;
+	}
+}
+
+.marketPlace > div {
+	max-width: 920px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.marketPlace a {
+	color: #000;
+	text-decoration: none;
+}
+
+.marketPlace a:hover .marketPlace-item {
+	border-color: #111;
+}
+
+.marketPlace-items {
+	@media(min-width: 600px) {
+		display: flex;
+	}
+}
+
+.marketPlace-item {
+	box-sizing: border-box;
+	border-radius: 30px;
+	border: 2px solid #ccc;
+	margin-bottom: 30px;
+	padding: 20px;
+
+	@media(min-width: 600px) {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+
+
+.marketPlace-cta {
+	text-align: center;
+}
