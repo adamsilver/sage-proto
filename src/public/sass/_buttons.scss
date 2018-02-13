@@ -40,3 +40,20 @@
 	background-color: #222;
 	color: #fff;
 }
+
+/**************************************
+* Ghost
+**************************************/
+
+.ghostButton,
+.ghostButton:visited {
+	@include button;
+	border: 2px solid #fff;
+	background-color: none;
+	color: #fff;
+}
+
+.ghostButton:hover {
+	background-color: #fff;
+	color: #ED1C5F;
+}
