@@ -43,10 +43,12 @@
 	font-size: 1.2em;
 	border-top: none;
 	vertical-align: bottom;
+	text-align: center;
 }
 
-.comparisonTable thead th:first-of-type {
-	width: 180px;
+.comparisonTable thead th:nth-child(1) {
+	width: 220px;
+	text-align: left;
 }
 
 .comparisonTable thead th:nth-child(2),
@@ -102,10 +104,11 @@
 
 .comparisonTable-popular {
 	font-size: 0.75em;
-	background-color: yellow;
+	background-color: #ffedf3;
 	font-weight: normal;
 	display: inline-block;
 	padding: 1px 4px;
+	display: block;
 }
 
 .comparisonTable .primaryButton {
