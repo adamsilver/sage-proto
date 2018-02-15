@@ -3,6 +3,12 @@
 
 {% import "macros/headings.html" as headings %}
 
+{% block pageScript %}
+	<script>
+		new SubNav($('.subNav'));
+	</script>
+{% endblock pageScript %}
+
 {% block content %}
 
 <!-- <div class="sub">
